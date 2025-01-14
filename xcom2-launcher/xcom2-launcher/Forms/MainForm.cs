@@ -13,6 +13,7 @@ using XCOM2Launcher.Mod;
 using XCOM2Launcher.XCOM;
 using JR.Utils.GUI.Forms;
 using Timer = System.Windows.Forms.Timer;
+using System.ComponentModel;
 
 namespace XCOM2Launcher.Forms
 {
@@ -25,6 +26,7 @@ namespace XCOM2Launcher.Forms
         private CancellationTokenSource ModUpdateCancelSource;
         private bool IsModUpdateTaskRunning => (ModUpdateTask != null && !ModUpdateTask.IsCompleted);
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Settings Settings { get; set; }
 
         public MainForm(Settings settings)

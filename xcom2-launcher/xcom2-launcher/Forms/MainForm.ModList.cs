@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Drawing;
@@ -24,6 +25,8 @@ namespace XCOM2Launcher.Forms
     {
         public ModList Mods => Settings.Mods;
         public Dictionary<string, ModTag> AvailableTags => Settings.Tags;
+        
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public TypedObjectListView<ModEntry> ModList { get; private set; }
         public ModEntry CurrentMod;
 

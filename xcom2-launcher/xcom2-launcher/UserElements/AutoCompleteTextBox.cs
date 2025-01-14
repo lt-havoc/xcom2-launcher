@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace XCOM2Launcher.UserElements
             ResetListBox();
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string[] Values { get; set; }
 
         public List<string> SelectedValues => Text.Split(' ').Where(str => str.Length > 0).ToList();

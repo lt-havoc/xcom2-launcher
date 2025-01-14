@@ -5,6 +5,8 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using FastColoredTextBoxNS;
+using FastColoredTextBoxNS.Feature;
+using FastColoredTextBoxNS.Types;
 using XCOM2Launcher.Forms.DiffMergeStuffs;
 using XCOM2Launcher.XCOM;
 
@@ -75,7 +77,7 @@ namespace XCOM2Launcher.Forms
 			}
 
 			if (curLine < tb.LinesCount)
-				tb.Selection = new Range(tb, 0, curLine, 0, curLine);
+				tb.Selection = new TextSelectionRange(tb, 0, curLine, 0, curLine);
 			//
 			EndUpdate();
 		}

@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace JR.Utils.GUI.Forms
 {
@@ -795,11 +796,13 @@ namespace JR.Utils.GUI.Forms
 
             #region Properties (only used for binding)
 
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
             /// <summary>
             /// The text that is been used for the heading.
             /// </summary>
             public string CaptionText { get; set; }
 
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
             /// <summary>
             /// The text that is been used in the FlexibleMessageBoxForm.
             /// </summary>

@@ -14,6 +14,7 @@ namespace XCOM2Launcher.Forms
     {
         protected Settings Settings { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool IsRestartRequired { get; private set; }
 
         public SettingsDialog(Settings settings)

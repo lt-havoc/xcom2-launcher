@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Text.RegularExpressions;
 using FastColoredTextBoxNS;
+using FastColoredTextBoxNS.Types;
 
 namespace XCOM2Launcher.XCOM
 {

@@ -14,6 +14,8 @@ namespace XCOM2Launcher.Forms
     public partial class WelcomeDialog : Form
     {
         public bool UseSentry => rSentryEnabled.Checked;
+        
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public GameId Game { get; private set; }
 
         public WelcomeDialog()
